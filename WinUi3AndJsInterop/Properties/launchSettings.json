@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinUi3AndJsInterop (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUi3AndJsInterop (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
