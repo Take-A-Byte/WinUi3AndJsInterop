@@ -12,6 +12,7 @@
     <EnableMsixTooling>true</EnableMsixTooling>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Assets\html\index.html" />
     <None Remove="gitignore" />
     <None Remove="LICENSE" />
     <None Remove="README.md" />
