@@ -1,4 +1,4 @@
-# WinUi3AndJsInterop
+# WinUI3 And JavaScript Interop
 This project demonstrates how we can inject a native object in javascript. This gives us ability take advantage of native Windows capabilities while executing a function in javascript.
 
 The commits in the repository will guide you through the process of injecting step by step.
