@@ -3,7 +3,7 @@ This project demonstrates how we can inject a native object in javascript. This 
 
 The commits in the repository will guide you through the process of injecting step by step.
 
-## Projects in Sample
+## Project Summaries
 - **WinUi3AndJsInterop**: This is main application project in which we will use WebView2 control to host a local web page. This web page will use JavaScript to call native code.
 
 - **NativeCode**: This project will be home for the code which needs to be accessed from JavaScript. In our case it is the `Add` function.
