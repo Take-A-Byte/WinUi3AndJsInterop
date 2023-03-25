@@ -4,8 +4,38 @@
 <head>
     <meta charset="utf-8" />
     <title>WinUI3 and JavaScript Interop</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div > * {
+            margin: 0.5rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>WinUI3 and JavaScript Interop Example</h1>
+<div>
+    <h1>WinUI3 and JavaScript Interop</h1>
+</div>
+<div>
+    <input type="number" id="Number1" value="1" style="width: 2rem">
+    <label> + </label>
+    <input type="number" id="Number2" value="4" style="width: 2rem">
+    <button onclick="add()"> = </button>
+    <label id="result">5</label>
+</div>
+<script>
+		const nativeCode = chrome.webview.hostObjects.sync.NativeCode;
+		const playWithNumbers = new nativeCode.PlayWithNumbers();
+
+		function add() {
+			let num1 = document.getElementById("Number1").valueAsNumber;
+			let num2 = document.getElementById("Number2").valueAsNumber;
+			document.getElementById("result").innerHTML = playWithNumbers.add(num1, num2);
+		}
+	</script>
 </body>
 </html>
